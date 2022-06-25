@@ -1,7 +1,8 @@
 {
     "test": {
-        "APPLICATION_URL": "https://google.ru",
+        "APPLICATION_URL": "https://pikabu.ru",
         "API_URL": "https://jsonplaceholder.typicode.com",
+        "API_URL_OZON": "https://www.ozon.ru/api",
         "BROWSER_NAME": "chrome",
         "BROWSER_WINDOW_WIDTH": 1920,
         "BROWSER_WINDOW_HEIGHT": 1080,
@@ -11,10 +12,7 @@
             "BROWSER_VERSION": "89.0",
             "HUB": "http://selenoid:4444/wd/hub"
         },
-        "APPIUM": {
-            "HUB": "http://localhost:4723/wd/hub"
-        },
-        "TIMEOUT": 60,
+        "TIMEOUT": 10,
         "EXAMPLE_DB_POSTGRESQL": {
             "USER": "root",
             "PASSWORD": "",

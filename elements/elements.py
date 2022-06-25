@@ -2,7 +2,7 @@ from core.utils.selene.support.shared.jquery_style import s
 
 
 class Elements:
-    def input(self, selector):
+    def element(self, selector):
         return s(selector)
 
     def button(self, selector):

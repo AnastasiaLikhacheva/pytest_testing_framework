@@ -135,14 +135,3 @@ def browser(pytestconfig):
     yield driver
     driver.quit()
 
-
-@pytest.fixture(scope='function')
-def mobile_application():
-    def wrapper(mobile_configuration):
-        mobile_driver = webdriver.Remote(
-            command_executor=settings_config['APPIUM']['HUB'],
-            desired_capabilities=mobile_configuration
-        )
-        mobile_driver.implicitly_wait(settings_config['TIMEOUT'])
-        return mobile_driver
-    return wrapper

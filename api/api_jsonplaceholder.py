@@ -7,6 +7,6 @@ class ApiJsonplaceholder(BaseApi):
     def jsonplaceholder_get(self):
         return self.send_get(url='posts/1')
 
-    @step('POST-запрос. Создание ресурса. URL: https://jsonplaceholder.typicode.com//posts/')
-    def jsonplaceholder_post(self, data):
-        return self.send_post(url='posts', data=data, is_json=True)
+    # @step('POST-запрос. Создание ресурса. URL: https://jsonplaceholder.typicode.com//posts/')
+    # def jsonplaceholder_post(self, data):
+    #     return self.send_post(url='posts', data=data, is_json=True)
